@@ -65,4 +65,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: |
-            ghcr.io/${{ github.repository_owner }}/scheduler:latest
+            ghcr.io/${GITHUB_REPOSITORY_OWNER,,}/scheduler:latest
