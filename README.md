@@ -24,7 +24,9 @@ Scheduler is a Spring Boot and PostgreSQL distributed job scheduler. It supports
 The build-based Compose file builds the application image locally:
 
 ```bash
-docker compose -f docker-compose\_x.yml up --build
+git clone https://github.com/Ayushkr3/Tactive.git
+cd Tactive
+docker compose up
 ```
 
 This starts:
@@ -36,7 +38,7 @@ This starts:
 Open `http://localhost:8080`, register an account, and sign in. Stop the stack with:
 
 ```bash
-docker compose -f docker-compose\_x.yml down
+docker compose down
 ```
 
 To remove the persisted database volume as well, use `docker compose ... down -v`.
@@ -124,9 +126,10 @@ Recurring jobs use six-field Spring cron expressions, including seconds. For exa
 
 ## Documentation
 
-* [`docs/USER\_GUIDE.md`](docs/USER_GUIDE.md) — dashboard-focused usage guide
-* [`docs/PROJECT\_DOCUMENTATION.md`](docs/PROJECT_DOCUMENTATION.md) — architecture, lifecycle, schema, API, and handler details
-
+* [`docs/USER_GUIDE.md`](docs/USER_GUIDE.md) — dashboard-focused usage guide
+* [`docs/PROJECT_DOCUMENTATION.md`](docs/PROJECT_DOCUMENTATION.md) — architecture, lifecycle, schema, API, and handler details
+* [`docs/Distributed_Job_Scheduler_Presentation.pptx`](docs/Distributed_Job_Scheduler_Presentation.pptx) — Deck presentation
+* [`docs/AI_CHANGE_LOOP_EVIDENCE.md`](docs/AI_CHANGE_LOOP_EVIDENCE.md) — AI change loop evidence
 ## Configuration and security notes
 
 * The default sample credentials and database password are for development only.
