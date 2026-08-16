@@ -1,5 +1,7 @@
 FROM eclipse-temurin:25-jdk
 
+ENV TZ=UTC
+
 WORKDIR /app
 
 COPY target/*.jar app.jar
