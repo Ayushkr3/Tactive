@@ -19,6 +19,14 @@ Scheduler is a Spring Boot and PostgreSQL distributed job scheduler. It supports
 * Docker and Docker Compose (recommended)
 * Or Java 25, Maven, and PostgreSQL 16 for local development
 
+## Testing
+
+Tests are run locally and in GitHub Actions using Maven:
+
+```bash
+./mvnw.cmd test
+```
+
 ## Run with Docker Compose
 
 The build-based Compose file builds the application image locally:
